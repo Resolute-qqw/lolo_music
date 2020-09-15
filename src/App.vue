@@ -1,12 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="box">
+      <div>333</div>
+      <div>222</div>
     </div>
-    <router-view/>
+    <!-- <router-view/> -->
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      data: ''
+    }
+  }
+}
+</script>>
 
 <style lang="scss">
 #app {
@@ -16,17 +26,10 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-background;
 }
 </style>
